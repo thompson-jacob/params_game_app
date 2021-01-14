@@ -6,15 +6,15 @@ class Api::GamesController < ApplicationController
   end
 
   def num_game_method
-    search = params["guess"]
+    search = params["32"]
     @guess = "#{search}"
     @answer = 77
     render "num_game.json.jb"
   end
+
+  def segment_params_method
+    search = params["32"]
+    @output_message = "The title is #{params["search"]}"
+    render "variable_params.json.jb"
+  end
 end
-
-# x = @user_input.split
-# if x[0] == a
-
-# if true
-# @user_input = “Hey, your name starts with the first letter of the alphabet!”,
