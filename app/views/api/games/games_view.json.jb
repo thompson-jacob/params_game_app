@@ -1,0 +1,9 @@
+if @user_input.slice(0).downcase == "a"
+  {
+    message: "Hey, your name starts with the first letter of the alphabet!",
+  }
+else
+  {
+    message: @user_input.upcase,
+  }
+end

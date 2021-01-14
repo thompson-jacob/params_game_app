@@ -1,0 +1,13 @@
+if @guess == @answer.to_s
+  {
+    message: "You won!",
+  }
+elsif @guess > @answer.to_s
+  {
+    message: "Too high!",
+  }
+else
+  {
+    message: "Too low!",
+  }
+end
